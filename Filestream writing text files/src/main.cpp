@@ -11,7 +11,7 @@
  int main()
  {
 
-//	 ofstream outputFile; //instead of using this, use
+//	 ofstream outputFile; //instead of using this, we can use ofstream is outputfilestream which is simpler.
 	 fstream outputFile;
 
 	 string outputFileName = "text.txt";
