@@ -64,8 +64,10 @@ int main()
 	}
 
 	//another approach to find the number in the set.
-	if(numbers.count(40))
+	if(numbers.count(90))
 		cout<<"Number found :"<<endl;
+	else
+		cout<<"not found"<<endl;
 
 	// using class test as a custom object in set.
 	set<Test> items;
