@@ -21,7 +21,7 @@ int main()
 	scores["Anu"].push_back(10);
 	scores["Kittu"].push_back(90);
 	scores["Kittu"].push_back(30);
-
+	scores["Koushik"].push_back(40);
 	//nested loop to iterator map and vector.
 	for(map<string, vector<int> >::iterator it = scores.begin(); it != scores.end(); it++)
 	{
