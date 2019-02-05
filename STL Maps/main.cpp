@@ -35,10 +35,10 @@ int main()
 
 	//checking for the key or value in a map
 
-	//cout<<ages["Anu"]<<endl; //so in this way of finding it actually creates a name in the maps and assign it to 0;
-							// you this method is not recommeded to use.
+	//cout<<ages["Anu"]<<endl; //so in this way of finding, it actually creates a name in the maps and assign it to 0;
+							// this method is not recommended to use.
 
-	//using fin function and if statement for searching the items in the map.
+	//using find function and if statement for searching the items in the map.
 
 	if(ages.find("Anu") != ages.end())
 	{
