@@ -36,7 +36,7 @@ public:
 
 	Utility()
 	{
-
+		cout<<"created utility"<<endl;
 	}
 
 	//dtor
@@ -56,6 +56,7 @@ private:
 public:
 	//ctor
 	 Myclass(){
+		 cout<<"created Myclass object "<<endl;
 		 factory = std::make_unique<Utility>();
 	 }
 
@@ -92,10 +93,13 @@ int main()
 	delete uti;*/
 
 	//using with smart pointers
-	std::unique_ptr<Myclass> uti(new Myclass());
+	std::unique_ptr<Myclass> uti1(new Myclass()); // this is not exception safe
+	std::unique_ptr<Myclass> uti = std::make_unique<Myclass>(); // this is exception safe.
 	uti->storeData("kou",408);
+	uti1->storeData("kit", 888);
 	uti->doSomething("Hello");
 	cout<<uti->getData("kou")<<endl;
+	cout<<uti1->getData("kit")<<endl;
 
 	return 0;
 }
