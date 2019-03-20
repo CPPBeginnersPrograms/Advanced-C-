@@ -29,9 +29,9 @@ int main()
 {
 
 	{
-		unique_ptr<Entity> entity (new Entity());// if you initialize in this way there may be a chance of exception and destructor destroys and dangling pointer will occur.
+//		unique_ptr<Entity> entity (new Entity());// if you initialize in this way there may be a chance of exception and destructor destroys and dangling pointer will occur.
 //		unique_ptr<Entity>entity = new Entity() // you cannot assign anything to a unique pointer.
-//		std::unique_ptr<Entity> entity = std::make_unique<Entity> ();
+		std::unique_ptr<Entity> entity = std::make_unique<Entity>();
 		entity->print();
 	}
 	return 0;
