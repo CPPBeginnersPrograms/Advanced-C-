@@ -7,6 +7,7 @@
 
 // using the const_cast<T>(v)
 //when and where to use.
+// NOTE : cosnt_cast is used to change the const qualifiers of pointers or references.
 #include <iostream>
 using namespace std;
 
